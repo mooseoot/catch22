@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>Catch 22</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  
+   
+ 
+ <body>
+
+ <p id="title"> <b>CATCH 22 ITEM TRACKER</b></p>
+ 
+ 
+ <div class="right" id="explanation">
+ <p class="challenge"><b><u><a href="https://imgur.com/a/gbb3Q8S" style="color:#d4d2cd; text-decoration: none;">Challenge Image:</a></u></b></p>
+ 
+ <hr style="height:5px;border-width:0;color:gray;background-color:gray">
+ 
+ <p class="challenge">
+ <b><u>Challenge Rules:</u></b></p>
+ <p> </p>
+ <p>Collect <i>exactly</i> <b>22 Big Chests</b>, <b>22 Small Chests</b>, and <b>22 Skulltulas</b> from dungeons while <i>simultaneously</i> following the these rules:</p>
+ <p>
+ <b>Big Chests + Small Chests = Skulltulas</b>
+ </p>
+ <p>
+ OR
+ </p>
+  <p>
+  <b>Big Chests + Skulltulas = Small Chests</b>
+  </p>
+  <p>
+  OR
+  </p>
+  <p>
+    <b>Small Chests + Skulltulas = Big Chests</b>
+  </p>
+  
+  <hr style="height:5px;border-width:0;color:gray;background-color:gray">
+  <p id="example">
+  <i><b>Example:</b></i>
+  </p>
+  <p> </p>
+  <p>
+  Deku Tree Map and Compass = <b>2</b> </p>
+  <p>Deku Tree Recovery Heart Chest = <b>1</b> </p>
+  
+  <p>
+  Deku Tree B1 Skulltula = <b>1</b>
+  </p>
+ <hr>
+<p>
+<b>2 = 1 + 1</b>  ✔️ 
+</p>  
+<p> </p>
+<p> </p>
+
+
+<hr style="height:5px;border-width:0;color:gray;background-color:gray">
+<p>*Jabu Big Chests includes beta 39th HP</p>
+
+<p>**Spirit Temple Big Chests includes Silver Gauntlets and Mirror Shield</p>
+<p>***Ganon's Trials and Ganon's Tower are combined into the row labelled Ganon's</p>
+
+
+<p> <b><i>■ STANDARD BINGO RULES APPLY ■</i></b></p>
+
+ 
+ 
+ 
+ 
+ 
+
+ </div>
+ <div class="left" id="tableblock">
+ <table>
+ <tr class="tableheader">
+ <td><b>Dungeon</b></td>
+ <td><b>Big Chests</b></td>
+ <td><b>Small Chests</b></td>
+ <td><b>Skulltulas</b></td>
+ </tr>
+  <tr id="dekurows">
+    <td id="dekutitle"><p class="left">Deku: </p><sub>(3,3,4)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();dekurow()" class="big deku" id="dekubig" type="number" min="0" max="3" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();dekurow()" class="bigd dekud" id="dekudbigd" type="number" min="0" max="3" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();dekurow()" class="small deku" id="dekusmall" type="number" min="0" max="3" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();dekurow()" class="smalld dekud" id="dekudsmalld" type="number" min="0" max="3" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();dekurow()" class="skull deku" id="dekuskull" type="number" min="0" max="4" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();dekurow()" class="skulld dekud" id="dekudskulld" type="number" min="0" max="4" /></sub></td>
+  </tr>
+  <tr id="dcrows">
+    <td id="dctitle"><p class="left">DC: </p><sub>(3,3,5)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();dcrow()" class="big dc" id="dcbig" type="number" min="0" max="3" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();dcrow()" class="bigd dcd" id="dcdbigd" type="number" min="0" max="3" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();dcrow()" class="small dc" id="dcsmall" type="number" min="0" max="3" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();dcrow()" class="smalld dcd" id="dcdsmalld" type="number" min="0" max="3" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();dcrow()" class="skull dc" id="dcskull" type="number" min="0" max="5" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();dcrow()" class="skulld dcd" id="dcdskulld" type="number" min="0" max="5" /></sub></td>
+  </tr>
+  <tr id="jaburows">
+    <td id="jabutitle"><p class="left">*Jabu: </p><sub>(4,0,4)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();jaburow()" class="big jabu" id="jabubig" type="number" min="0" max="4" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();jaburow()" class="bigd jabud" id="jabudbigd" type="number" min="0" max="4" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();jaburow()" class="small jabu" id="jabusmall" type="number" min="0" max="9" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();jaburow()" class="smalld jabud" id="jabudsmalld" type="number" min="0" max="0" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();jaburow()" class="skull jabu" id="jabuskull" type="number" min="0" max="4" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();jaburow()" class="skulld jabud" id="jabudskulld" type="number" min="0" max="4" /></sub></td>
+  </tr>
+  <tr id="forestrows">
+    <td id="foresttitle"><p class="left">Forest: </p><sub>(4,9,5)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();forestrow()" class="big forest" id="forestbig" type="number" min="0" max="4" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();forestrow()" class="bigd forestd" id="forestdbigd" type="number" min="0" max="4" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();forestrow()" class="small forest" id="forestsmall" type="number" min="0" max="9" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();forestrow()" class="smalld forestd" id="forestdsmalld" type="number" min="0" max="9" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();forestrow()" class="skull forest" id="forestskull" type="number" min="0" max="5" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();forestrow()" class="skulld forestd" id="forestdskulld" type="number" min="0" max="5" /></sub></td>
+  </tr>
+  <tr id="firerows">
+    <td id="firetitle"><p class="left">Fire: </p><sub>(4,10,5)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();firerow()" class="big fire" id="firebig" type="number" min="0" max="4" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();firerow()" class="bigd fired" id="firedbigd" type="number" min="0" max="4" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();firerow()" class="small fire" id="firesmall" type="number" min="0" max="10" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();firerow()" class="smalld fired" id="firedsmalld" type="number" min="0" max="10" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();firerow()" class="skull fire" id="fireskull" type="number" min="0" max="5" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();firerow()" class="skulld fired" id="firedskulld" type="number" min="0" max="5" /></sub></td>
+  </tr>
+  <tr id="waterrows">
+    <td id="watertitle"><p class="left">Water: </p><sub>(4,6,5)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();waterrow()" class="big water" id="waterbig" type="number" min="0" max="4" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();waterrow()" class="bigd waterd" id="waterdbigd" type="number" min="0" max="4" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();waterrow()" class="small water" id="watersmall" type="number" min="0" max="6" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();waterrow()" class="smalld waterd" id="waterdsmalld" type="number" min="0" max="6" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();waterrow()" class="skull water" id="waterskull" type="number" min="0" max="5" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();waterrow()" class="skulld waterd" id="waterdskulld" type="number" min="0" max="5" /></sub></td>
+  </tr>
+  <tr id="shadowrows">
+    <td id="shadowtitle"><p class="left">Shadow: </p><sub>(4,12,5)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();shadowrow()" class="big shadow" id="shadowbig" type="number" min="0" max="4" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();shadowrow()" class="bigd shadowd" id="shadowdbigd" type="number" min="0" max="4" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();shadowrow()" class="small shadow" id="shadowsmall" type="number" min="0" max="12" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();shadowrow()" class="smalld shadowd" id="shadowdsmalld" type="number" min="0" max="12" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();shadowrow()" class="skull shadow" id="shadowskull" type="number" min="0" max="5" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();shadowrow()" class="skulld shadowd" id="shadowdskulld" type="number" min="0" max="5" /></sub></td>
+  </tr>
+  <tr id="spiritrows">
+    <td id="spirittitle"><p class="left">**Spirit: </p><sub>(5,14,5)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();spiritrow()" class="big spirit" id="spiritbig" type="number" min="0" max="5" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();spiritrow()" class="bigd spiritd" id="spiritdbigd" type="number" min="0" max="5" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();spiritrow()" class="small spirit" id="spiritsmall" type="number" min="0" max="14" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();spiritrow()" class="smalld spiritd" id="spiritdsmalld" type="number" min="0" max="14" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();spiritrow()" class="skull spirit" id="spiritskull" type="number" min="0" max="5" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();spiritrow()" class="skulld spiritd" id="spiritdskulld" type="number" min="0" max="5" /></sub></td>
+  </tr>
+  <tr id="botwrows">
+    <td id="botwtitle"><p class="left">Botw: </p><sub>(3,10,3)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();botwrow()" class="big botw" id="botwbig" type="number" min="0" max="3" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();botwrow()" class="bigd botwd" id="botwdbigd" type="number" min="0" max="3" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();botwrow()" class="small botw" id="botwsmall" type="number" min="0" max="10" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();botwrow()" class="smalld botwd" id="botwdsmalld" type="number" min="0" max="10" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();botwrow()" class="skull botw" id="botwskull" type="number" min="0" max="3" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();botwrow()" class="skulld botwd" id="botwdskulld" type="number" min="0" max="3" /></sub></td>
+  </tr>
+  <tr id="icrows">
+    <td id="ictitle"><p class="left">IC: </p><sub>(3,0,3)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();icrow()" class="big ic" id="icbig" type="number" min="0" max="3" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();icrow()" class="bigd icd" id="icdbigd" type="number" min="0" max="3" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();icrow()" class="small ic" id="icsmall" type="number" min="0" max="0" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();icrow()" class="smalld icd" id="icdsmalld" type="number" min="0" max="0" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();icrow()" class="skull ic" id="icskull" type="number" min="0" max="3" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();icrow()" class="skulld icd" id="icdskulld" type="number" min="0" max="3" /></sub></td>
+  </tr>
+  <tr id="gtgrows">
+    <td id="gtgtitle"><p class="left">GTG: </p><sub>(1,20,0)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();gtgrow()" class="big gtg" id="gtgbig" type="number" min="0" max="1" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();gtgrow()" class="bigd gtgd" id="gtgdbigd" type="number" min="0" max="1" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();gtgrow()" class="small gtg" id="gtgsmall" type="number" min="0" max="20" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();gtgrow()" class="smalld gtgd" id="gtgdsmalld" type="number" min="0" max="20" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();gtgrow()" class="skull gtg" id="gtgskull" type="number" min="0" max="0" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();gtgrow()" class="skulld gtgd" id="gtgdskulld" type="number" min="0" max="0" /></sub></td>
+  </tr>
+  <tr id="ganonsrows">
+    <td id="ganonstitle"><p class="left">**Ganon's: </p><sub>(2,14,0)</sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();ganonsrow()" class="big ganons" id="ganonsbig" type="number" min="0" max="2" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();ganonsrow()" class="bigd ganonsd" id="ganonsdbigd" type="number" min="0" max="2" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();ganonsrow()" class="small ganons" id="ganonssmall" type="number" min="0" max="14" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();ganonsrow()" class="smalld ganonsd" id="ganonsdsmalld" type="number" min="0" max="14" /></sub></td>
+    <td><sup><input placeholder=0 value="0" onchange="verticalsum();ganonsrow()" class="skull ganons" id="ganonsskull" type="number" min="0" max="0" /></sup>&frasl;<sub><input placeholder=0 value="0" onchange="verticalsum();ganonsrow()" class="skulld ganonsd" id="ganonsdskulld" type="number" min="0" max="0" /></sub></td>
+  </tr>
+  <tr>
+  <td id="sumtitle"><b>Sum: </b></td>
+    <td id="bigsumcell"><div id="bigsum">0</div>&frasl;<div id="bigdsumd">0</div></td>
+    <td id="smallsumcell"><div id="smallsum">0</div>&frasl;<div id="smalldsumd">0</div></td>
+    <td  id="skullsumcell"><div id="skullsum">0</div>&frasl;<div id="skulldsumd">0</div></td>
+  </tr>
+</table>
+<p>
+
+</p>
+ <button onclick="hiderows()">
+Hide Empty (0/0) Rows</button> 
+<button onclick="unhiderows()">
+Unhide</button> 
+<button onclick="clearrows()">Clear All</button>
+<button onclick="generate_dist_22()">I'm Feeling Lucky</button> 
+
+<p>
+<b><u>Coloration Guide:</u></b>
+</p>
+<p class="plannedsuccess">
+<em>Pale Green</em> means the planned items (denominator) pass the rules
+</p>
+<p class="success">
+<em>Green</em> means both the planned items (denominator) and collected items (numerator) pass the rules
+</p>
+<p class="failure">
+<em>Pale Red</em> means the planned items (denominator) fail the rules
+</p>
+
+</div>
+<div class="footer" >
+  <p>Puzzle Design by MooseOoT and NatalyaHasDied. Puzzle Design Help by Dotzo, Savestate, and Dannyb. Tracker by NatalyaHasDied and Savestate with help from MooseOoT, Freechips, Thar0, and MrCheeze</p>
+</div>
+
+</body>
+
+</html>
