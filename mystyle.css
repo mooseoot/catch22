@@ -1,0 +1,110 @@
+input[type=number]{
+  width: 30%;
+  border: 0;
+  background-color: transparent;
+  color: white
+}
+input[type=number]:focus{
+  width: 30%;
+  border: 0;
+  color: white
+}
+div{
+  width: 30%;
+  border: 0;
+}
+
+#explanation{
+  float:right;
+}
+#tableblock{
+  float:left;
+}
+
+#bigsum{
+  float: left;
+  vertical-align: middle;
+}
+#bigdsumd{
+  float:right;
+  vertical-align: middle;
+}
+#smallsum{
+  float: left;
+  vertical-align: middle;
+}
+#smalldsumd{
+  float: right;
+  vertical-align: middle;
+}
+
+#skullsum{
+  float: left;
+  vertical-align: middle;
+}
+#skulldsumd{
+  float: right;
+  vertical-align: middle;
+}
+
+div:focus{
+  width: 30%;
+  border: 0;
+}
+table, th, td {
+  table-layout: fixed;
+  width: 100px; 
+  border: 1px solid #d4d2cd;
+   border-collapse: collapse;
+   text-align:center;
+   padding: 2px;
+   color: #d4d2cd;
+   background-color: #101010;
+   
+}
+p.left {
+ line-height: 10pt;
+  margin: 4px
+}
+p.right{
+}
+
+p.challenge {
+  font-size: 25px;
+}
+
+p.title {
+ font-size: 60px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+p.example{
+  font-size: 18px;
+}
+
+p.plannedsuccess em{
+  color: #44bd60;
+}
+
+p.success em{
+  color: green;
+}
+
+p.failure em{
+  color: #bd5244;
+}
+
+div.footer{
+    font-size: 8px;
+  text-align: center;
+}
+
+body {
+background-color: #333333;
+color: #d4d2cd;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+tr.tableheader{
+  font-size: 14px;
+}
+
